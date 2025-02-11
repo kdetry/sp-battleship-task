@@ -1,0 +1,16 @@
+.boardCell {
+    border: 1px solid #989898;
+    cursor: pointer;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isShot {
+    color: #000;
+}
+
+.isShotShip {
+    color: red;
+}
