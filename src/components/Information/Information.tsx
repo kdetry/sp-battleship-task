@@ -1,4 +1,3 @@
-import { SHIP_LAYOUT_DATA } from "../../constants/DataConstants"
 import styles from "./Information.module.css"
 import { useAtom } from "jotai";
 import { shipsAtom } from "../../state/shipsAtom";

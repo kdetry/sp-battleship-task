@@ -1,5 +1,4 @@
 import { TShipData } from "../../state/shipsAtom";
-import { ElementOf } from "../../utils/type/ElementOf";
 
 type TShipShotInfo = {
     ship: TShipData;
@@ -11,10 +10,10 @@ export const ShipShotInfo = ({ ship, hitPositions }: TShipShotInfo) => {
 
     return (
         <span>
-            {Array.from({ length: hitCount }, (_, index) => (
+            {Array.from({ length: hitCount }, () => (
                 <>X</>
             ))}
-            {Array.from({ length: ship.positionsWithKeys.length - hitCount }, (_, index) => (
+            {Array.from({ length: ship.positionsWithKeys.length - hitCount }, () => (
                 <>O</>
             ))}
         </span>

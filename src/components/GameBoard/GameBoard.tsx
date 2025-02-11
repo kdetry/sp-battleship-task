@@ -1,4 +1,4 @@
-import { useAtom, useSetAtom } from "jotai";
+import { useAtom } from "jotai";
 import { GAME_BOARD_HEIGHT, GAME_BOARD_WIDTH } from "../../constants/AppConstants";
 import { historyAtom } from "../../state/historyAtom";
 import { getBoardCellKey } from "../../utils/getBoardCellKey";
@@ -55,7 +55,7 @@ export const GameBoard = () => {
                     </div>
                 ))}
             </div>
-            {isGameOver && <div>Game Over</div>}
+            {isGameOver && <h1>Game Over</h1>}
         </div>
     )
 }
